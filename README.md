@@ -5,7 +5,7 @@ This app is built with Node.js and Express for the back end, React.js for the fr
 SETUP
 
     * Clone git repository.
-        - git clone <repo_url>
+        - git clone https://github.com/bozege/library-app-case.git
         - cd library-case-app
     * Install dependencies.
         - npm install
