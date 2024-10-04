@@ -16,7 +16,7 @@ SETUP
         - node server.js
     * Start client
         ! Navigate to the React app directory and run the command below.
-        -
+        - npm start
     * Run SQL file
         - psql -U <username> -d <database_name> -f <path_to_sql_file>
     * Testing
