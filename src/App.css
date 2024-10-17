@@ -1,0 +1,152 @@
+/* General Styles */
+.App {
+  text-align: center;
+  background-color: #eff3fa; /* Adjusted for consistency */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #333; /* Changed to dark color for better readability */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Keeping this for header consistency */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* User Card Styles */
+.user-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  min-height: 150px; /* Ensures the cards have a minimum height */
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+/* Spacing */
+.mb-4 {
+  margin-bottom: 1.5rem !important; /* Add bottom margin to space cards vertically */
+}
+
+/* Book Card Styles */
+.book-card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 15px 0;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Borrowed vs Available Styles */
+.borrowed {
+  border-left: 8px solid red;
+}
+
+.available {
+  border-left: 8px solid green;
+}
+
+.book-card.available::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  background-color: green;
+}
+
+.book-card.borrowed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  background-color: red;
+}
+
+/* Book Table Styles */
+.table {
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  text-align: center; /* Center align text in table for better readability */
+}
+
+/* Input Field Styles */
+input[type="text"] {
+  margin-bottom: 20px; /* Spacing below the input */
+}
+
+/* Alert Styles */
+.alert {
+  margin-top: 20px; /* Spacing above alerts */
+}
+
+/* Spinner Styles */
+.spinner {
+  margin-top: 50px; /* Space above the spinner */
+}
+
+/* Books Detail Page Styles */
+.book-detail {
+  margin: 2rem; /* Margin around the book detail section */
+  padding: 2rem; /* Padding inside the detail section */
+  background-color: white; /* Background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.book-detail h1 {
+  color: #282c34; /* Heading color */
+  margin-bottom: 1rem;
+}
+
+.book-detail h4 {
+  color: #555; /* A softer color for additional information */
+}
+
+.book-detail button {
+  margin-top: 1.5rem; /* Margin above the button */
+}
